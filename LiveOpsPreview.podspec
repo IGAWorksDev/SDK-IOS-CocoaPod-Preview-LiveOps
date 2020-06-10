@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LiveOpsPreview"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "LiveOpsPreview is sdk for testing with Adbrix Dev Team."
   spec.description  = <<-DESC
 This IOS ObjC framework is not release version. 
@@ -16,12 +16,9 @@ All software, both binary and sourch published by IGAWORKS is copyrighted by IGA
 All rights reserved.
 LICENSE
   }
-
   spec.author       = { "mike-igaw" => "mike@igaworks.com" }
-
-  spec.platform     = :ios, "8.0"
-
-  spec.source       = { :git => "https://github.com/IGAWorksDev/SDK-IOS-CocoaPod-Preview-LiveOps.git", :tag => spec.version.to_s }
+  spec.platform     = :ios, '8.0'
+  spec.source       = { :git => "https://github.com/IGAWorksDev/SDK-IOS-CocoaPod-Preview-LiveOps.git", :tag => "#{spec.version}" }
 
   spec.resources = "LiveOps.bundle"
   spec.ios.vendored_framework  = "LiveOps.framework"
